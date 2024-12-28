@@ -1,0 +1,45 @@
+@use "../helpers/varibles" as *;
+
+.main-title{
+    position: relative;
+    &::before,
+    &::after{
+        content: '';
+        position: absolute;
+        width: 10rem;
+        height: 3px;
+        background-color:$mainDark;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: -20px;
+    }
+    &::after{
+        width: 2rem;
+        height: 6px;
+        bottom: -25px;
+    }
+}
+
+.head-style{
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    @media #{$minLarge} {
+        font-size: 1.8rem;
+    }
+    font-weight: 600;
+    width: fit-content;
+    background-image: linear-gradient(to right , $mainDark, $pink );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+
+
+
+
+
+
+
+

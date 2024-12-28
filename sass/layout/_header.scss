@@ -1,0 +1,55 @@
+@use "../helpers/varibles" as *;
+@use "../helpers/mixins" as *;
+
+/* Start Nav-bar */
+.menu{
+    @include gradient($mainDark ,$pink );
+
+    .navbar-toggler{
+        color: white;
+        border: 2px solid white;
+        font-size: 25px;
+        &:focus{
+            box-shadow: none;
+        }
+    }
+    li{
+        padding: 0 .7rem;
+        a{
+            text-transform: capitalize;
+            font-weight: 600;
+        }
+    }
+    .btn-rounded{
+        display: none;
+        @media #{$minLarge} {
+            display: block;
+        }
+    }
+}
+/* End Nav-bar */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

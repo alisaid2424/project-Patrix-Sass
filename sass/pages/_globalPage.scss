@@ -1,0 +1,17 @@
+@use "../helpers/varibles" as *;
+@use "../helpers/mixins" as *;
+
+*{
+    margin: 0;
+    padding: 0;
+    @include prifixer(box-sizing , border-box , webKit Moz O );
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+}
+html{scroll-behavior: smooth;}
+a{
+    text-decoration: none;
+    color: white;
+}
