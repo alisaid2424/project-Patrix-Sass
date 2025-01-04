@@ -54,7 +54,7 @@ a {
 .landing {
   background: linear-gradient(to right, rgba(153, 38, 240, 0.95), rgba(209, 34, 227, 0.95));
   position: relative;
-  padding: 10rem 0 0 0;
+  padding: 7rem 0;
   width: 100%;
   min-height: calc(100vh - 76px);
 }
@@ -77,6 +77,12 @@ a {
   font-weight: bold;
   text-transform: capitalize;
   font-size: 4rem;
+}
+@media (max-width:565px) {
+  .landing .text-land .text-intro .title {
+    font-size: 3rem;
+    font-weight: 600;
+  }
 }
 .landing .text-land .text-intro .descripstion {
   display: block;
@@ -218,14 +224,18 @@ a {
 .services .content-services button {
   border: 0.1rem solid #9926f0;
 }
-.services .content-pic-1, .services .content-pic-2, .services .content-pic-3 {
+.services .content-pic-1,
+.services .content-pic-2,
+.services .content-pic-3 {
   text-align: center;
 }
 @media (min-width:768px) {
-  .services .content-pic-1, .services .content-pic-3 {
+  .services .content-pic-1,
+  .services .content-pic-3 {
     text-align: right;
   }
-  [dir=rtl] .services .content-pic-1, [dir=rtl] .services .content-pic-3 {
+  [dir=rtl] .services .content-pic-1,
+  [dir=rtl] .services .content-pic-3 {
     text-align: left;
   }
 }
@@ -398,9 +408,6 @@ a {
 .contact .gradent {
   background: linear-gradient(to right, rgba(153, 38, 240, 0.95), rgba(209, 34, 227, 0.95));
 }
-.contact .contact-text {
-  padding: 3rem;
-}
 .contact .contact-text .list-contact {
   position: relative;
 }
@@ -411,9 +418,6 @@ a {
   margin-right: 0.5rem;
   font-size: 1.2rem;
   padding-top: 1rem;
-}
-.contact .form {
-  padding: 3rem;
 }
 .contact .form input:focus,
 .contact .form textarea:focus {
@@ -538,6 +542,12 @@ a {
 }
 .footer .footer-end {
   color: #6c757d;
+  font-size: 16px;
+}
+@media (max-width:565px) {
+  .footer .footer-end {
+    font-size: 13px;
+  }
 }
 .footer .footer-end a {
   color: #dee2e6;
@@ -635,14 +645,11 @@ a {
 }
 
 .btn-backUp {
-  right: 1.2rem;
-  bottom: 1.8rem;
+  right: 1.5rem;
+  bottom: 4rem;
   width: 3rem;
   height: 3rem;
   background-color: #9926f0;
   line-height: 3rem;
   display: none;
-}
-
-/* start footer */
-/* End footer *//*# sourceMappingURL=patrix.css.map */
+}/*# sourceMappingURL=patrix.css.map */
